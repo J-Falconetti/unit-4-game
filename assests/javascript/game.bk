@@ -1,4 +1,3 @@
-
 // this is the Javascript page
 // game that picks a random number and the player needs to pick from 4 crystals with random values: to win game user must get to total without going over.  All values will rest after game is either won or lost and total score will be displayed
 
@@ -11,17 +10,13 @@ var loss=0;
 
 //generating random values
     // Total is for total number between 19 and 120
- // var total =[Math.floor(Math.random() * (120 - 19));
+ var total = [Math.floor(Math.random() * (120 - 19))];
     // getting values for the 4 crystals 
     for (i = 1; i < 5; i++) {
+       
+        var crystal = $("<div>");
+            crystal.attr("class",'crystal');
 
-        var genran = Math.floor(Math.random() * 12) 
-console.log(genran)
-        var gems = $("<div>");
-            gems.attr({
-            "class": 'gems',
-            "data-genran": genran
-    });
+        $(".crystals").append(crystal);
 
-        $(".playcard").append(gems);
     }
