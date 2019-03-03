@@ -14,7 +14,7 @@ var loss=0;
     // getting values for the 4 crystals vad cr[x]
     for (i = 1; i < 5; i++) {
         var gemval = Math.floor(Math.random() * 12);
-        console.log(gemval)
+        gems.attr("class", 'gem');
         var gems = $("<div>");
         $(".gem").append(gems)
     }
