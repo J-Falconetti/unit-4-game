@@ -11,12 +11,11 @@ var loss=0;
 
 //generating random values
     // Total is for total number between 19 and 120
- // var total =[Math.floor(Math.random() * (120 - 19));
+ total =Math.floor(Math.random() * 101) + 19;
     // getting values for the 4 crystals 
     for (i = 1; i < 5; i++) {
 
         var genran = Math.floor(Math.random() * 12) 
-console.log(genran)
         var gems = $("<div>");
             gems.attr({
             "class": 'gems',
