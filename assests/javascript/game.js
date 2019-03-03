@@ -12,7 +12,8 @@ var loss=0;
 //generating random values
     // Total is for total number between 19 and 120
  total =Math.floor(Math.random() * 101) + 19;
-    // getting values for the 4 crystals 
+ $("#total").html("Your Total Goal is: " +total)
+    // getting values for the 4 crystals and placing cards 
     for (i = 1; i < 5; i++) {
 
         var genran = Math.floor(Math.random() * 12) 
@@ -24,3 +25,6 @@ var loss=0;
 
         $(".playcard").append(gems);
     }
+$(".gems").on('click', function () {
+   
+});
