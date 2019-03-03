@@ -11,15 +11,12 @@ var loss=0;
 //generating random values
     // Total is for total number between 19 and 120
  var total = [Math.floor(Math.random() * (120 - 19))];
-    // getting values for the 4 crystals vad cr[x]
+    // getting values for the 4 crystals 
     for (i = 1; i < 5; i++) {
-        var gemval = Math.floor(Math.random() * 12);
-        gems.attr("class", 'gem');
+       
         var gems = $("<div>");
-        $(".gem").append(gems)
+            gems.attr("class",'gems');
+
+        $(".playcard").append(gems);
+
     }
-    console.log(total);
-
-
-
-

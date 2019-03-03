@@ -1,22 +1,17 @@
 /* this is the CSS page */
 
-body {
-        background-image: url('../images/bround.png');
-        background-repeat: no-repeat;
-        background-size: 100%, 100%
+.gems{
+        border:5px dashed rebeccapurple;
+        height:250px;
+        width: 250px;
+} 
+.playcard{
+        justify-content: center;
+        align-items: center;
+        display: flex;
 }
 
-.instxt {
-        color: red;
-        font-family: 'Titillium Web', sans-serif;
-        
-}
 
-.playarea {
-   
-}
-
-        
 .spacer25 { 
         height: 25px;
          width: 100%;
