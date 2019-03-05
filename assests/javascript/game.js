@@ -5,22 +5,25 @@
 
 // setting up varibles Total, Crystals 1 to 4, crystal cunter, win and loss counters
 
-var total = 0
-var clicks = 0
+var total = 0;
+var clicks = 0;
 var wins = 0;
 var loss = 0;
-
+total = Math.floor(Math.random() * 101) + 20;
+$("#total").html("Your Total Goal is: " + total + " You have " + wins + " wins and " + loss + " losses")
+$("#totclick").html("Your Clicks = " +clicks)
 //create reset function
-// function startgame() {
+function sgr() {
 
     total=0
     clicks=0
-
-        //generating random values
+           //generating random values
     // Total is for total number between 19 and 120
-    total = Math.floor(Math.random() * 101) + 19;
+    total = Math.floor(Math.random() * 101) + 20;
     $("#total").html("Your Total Goal is: " + total + " You have " + wins + " wins and " + loss + " losses")
     $("#totclick").html("Your Clicks = " +clicks)
+}
+ 
 
 
     // getting values for the 4 crystals and placing cards 
@@ -53,15 +56,20 @@ var loss = 0;
         if (clicks === total) {
             alert("You won!");
             wins++;
+            sgr();
+            
+            
             
         }
         else if (clicks > total) {
             alert("you loss");
             loss++;
+            sgr();
+            
+            
         
         }
 
-// startgame();
+
 
     });
-// startgame();
