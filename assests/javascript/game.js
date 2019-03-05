@@ -25,6 +25,13 @@ function sgr() {
     total = Math.floor(Math.random() * 101) + 20;
     $("#total").html("Your Total Goal is: " + total + " You have " + wins + " wins and " + loss + " losses")
     $("#totclick").html("Your Clicks = " +clicks)
+    function reset() {
+        random = Math.floor(Math.random()*102+19);
+        console.log(random);
+        $("#numberToGet").text(random);
+         userTotal = 0;
+        $("#score").text(userTotal);
+    }
 }
  
 
